@@ -1,0 +1,228 @@
+
+
+/* texto */
+.text{
+    color: #fff;
+    font-weight: normal;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.text-12{
+    font-size: 12px !important;
+}
+.text-14{
+    font-size: 14px !important;
+}
+
+.text-16{
+    font-size: 16px;
+}
+
+.text-18{
+    font-size: 18px;
+}
+
+.text-24{
+    font-size: 24px !important;
+}
+.text-28{
+    font-size: 28px !important;
+}
+.text-32{
+    font-size: 32px !important;
+}
+.text-36{
+    font-size: 36px;
+}
+.text-40{
+    font-size: 40px;
+}
+.text-50{
+    font-size: 50px;
+}
+
+.title-card{
+    font-family: 'Fredoka One', cursive;
+    font-size: 36px;
+    color: #fff;
+    z-index: 1;
+    margin-bottom: 15px;
+}
+
+/*card*/
+.card-blue-text-shadow{
+    background: #00d67f;
+    color:#FFF;
+    font-size:24px;
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+    box-shadow: -5px 5px #FFC400;
+    margin-top:-20px;
+    margin-bottom: 30px;
+}
+.card-blue {
+    background: #3f1af6;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    z-index: 990;
+    padding: 15px 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+  .clip-red{
+	background: #3f1af6;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+    clip-path: polygon(0% 100%, 0% 10%, 100% 0%, 100% 90%);
+	/*clip-path: polygon(0% 100%, 30% 0%, 100% 0%, 70% 100%);*/
+  }
+  .clip-yellow{
+	background: #FFC400;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	z-index: -2;
+	height: 100%;
+	width: 100%;
+    clip-path: polygon(0% 100%, 0% 10%, 100% 0%, 100% 90%);
+	/*clip-path: polygon(0% 100%, 30% 0%, 100% 0%, 70% 100%);*/
+  }
+
+  .card-blue .wave {
+	position: absolute;
+	top: -350px;
+	left: -80px;
+	width: 500px;
+	height: 500px;
+	background: #FFC400;
+	border-radius: 43%;
+	filter: opacity(0.8);
+	animation: drift linear infinite;
+    transform-origin: 50% 48%;
+    z-index: -1;
+}
+
+.card-blue .wave:nth-of-type(1) {
+	animation-duration: 5s;
+}
+
+.card-blue .wave:nth-of-type(2) {
+    animation-duration: 7s;
+}
+
+.card-blue .wave:nth-of-type(3) {
+	animation-duration: 9s;
+    background-color: #ff007b;
+    width: 480px;
+	height: 480px;
+	filter: opacity(0.9);
+}
+
+@keyframes drift {
+	from {
+		transform: rotate(360deg);
+	}
+}
+
+/*Inputs*/
+.cadastro, cadastro:active, cadastro:focus{
+    background: #00d67f;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 24px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 25px;
+    margin-bottom: 15px;
+    position: relative;
+    border: 1px solid #00d67f !important;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) !important;
+}
+.cadastro::-webkit-input-placeholder {
+	color: #fff !important;
+ }
+ 
+ .cadastro:-ms-input-placeholder {  
+	color: #fff !important;  
+ }
+
+/*button*/
+button{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+  }
+.button {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    background-color: #c54357;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn-clip-red{
+    width: 75px;
+    height: 52.2px;
+    background:#ff007b;
+    border-radius:0px 9px 9px 0px!important;
+    overflow:hidden;
+    font-size:20px !important;
+    font-family: 'Fredoka One', cursive;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    z-index: 1;
+    clip-path: polygon(10% 100%, 0% 0%, 100% 0%, 100% 100%);
+}
+.btn-clip-red span {
+    position:absolute;
+    top:15px;
+    left:0;
+    width:100%;
+    height:100%;
+    transition: 0.5s;
+}
+.btn-clip-red span:nth-child(1) {
+    transform: translateX(-100%);
+    transition: 0.5s;
+}
+.btn-clip-red:hover span:nth-child(1), .btn-clip-red:active span:nth-child(1){
+    transform: translateX(0);
+    color:#00d67f;
+}
+.btn-clip-reda span:nth-child(2) {
+    transform: translateX(0);
+    transition: 0.5s;
+}
+.btn-clip-red:hover span:nth-child(2), .btn-clip-red:active span:nth-child(2) {
+    transform: translateX(100%);
+    color:#00d67f;
+}
+
+.clip-button-border{
+    top:0;
+    right: 0;
+    position: absolute;
+    border-radius:0px 10px 10px 0px!important;
+    z-index: 0;
+    height: 52px;
+    width: 85px;
+    background: #FFC400;
+    clip-path: polygon(10% 100%, 0% 0%, 100% 0%, 100% 100%);
+}
+
+/* Efeito flip card*/
